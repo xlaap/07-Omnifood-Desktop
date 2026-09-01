@@ -63,14 +63,17 @@ html {
   padding: 0 4.8rem;
 }
 
+/****** Navegation bar ******** */
 .main-nav-list {
   list-style: none;
   display: flex;
   gap: 3.2rem;
+  align-items: center;
 }
 
 .main-nav-link:link,
 .main-nav-link:visited {
+  display: inline-block;
   text-decoration: none;
   color: #333;
   font-weight: 500;
@@ -81,6 +84,15 @@ html {
 .main-nav-link:hover,
 .main-nav-link:active {
   color: #cf711f;
+}
+
+/* al color los dos selectores juntos modificamos la spec para que solo se use cuando ambos estan juntos. */
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  background-color: #cf711f;
+  color: #fff;
 }
 
 /* *********este es el Hero section *********/
