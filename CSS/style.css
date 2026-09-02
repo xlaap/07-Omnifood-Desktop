@@ -3,10 +3,16 @@
 ---- Typografy
 
 -fontweight:
+default :400
+500
+600
+700
+
 
 -line-height: 
 defult : 1
-
+1.05
+1.06
 
 
 
@@ -26,6 +32,8 @@ FONT SIZE SYSTEM (px)
 ---03shadows
 
 --- 04 Border_radios
+by default we us 9px
+
 ----05 white space 
 
 SPACING SYSTEM (px)
@@ -48,6 +56,31 @@ body {
 
 html {
   font-size: 62.5%;
+}
+/* Esta es la configuracion por defecto de los grids elementes y del container  */
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid--2-col {
+  grid-template-columns: repeat(2, 1fr);
+  /* usamos la funcion de repeat porque es lo mismo que escribir 1fr 1fr, es solo un shortcut */
+}
+
+.grid--3-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-col {
+  grid-template-columns: repeat(4, 1fr);
 }
 /********** Header **************** */
 .logo {
@@ -91,8 +124,13 @@ html {
 .main-nav-link.nav-cta:visited {
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
-  background-color: #cf711f;
+  background-color: #e67e22;
   color: #fff;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
 }
 
 /* *********este es el Hero section *********/
@@ -129,7 +167,7 @@ html {
   line-height: 1.6;
   margin-bottom: 4.8rem;
 }
-/* estos son los botones de la pagina principal */
+/* ****** estos son los botones de la pagina principal ******/
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -171,7 +209,7 @@ html {
 .margin-right-sm {
   margin-right: 1.6rem !important;
 }
-/* componente de imagenes */
+/* ******** componente de imagenes ****** */
 
 .delivered-fod {
   display: flex;
