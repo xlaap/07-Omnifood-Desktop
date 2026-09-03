@@ -57,7 +57,7 @@ body {
 html {
   font-size: 62.5%;
 }
-/* Esta es la configuracion por defecto de los grids elementes y del container  */
+/***** Esta es la configuracion por defecto de los grids elementes y del container  *****/
 
 .container {
   max-width: 120rem;
@@ -82,7 +82,7 @@ html {
 .grid--4-col {
   grid-template-columns: repeat(4, 1fr);
 }
-/********** Header **************** */
+/********** Aqui esta el Header **************** */
 .logo {
   height: 2.2rem;
 }
@@ -96,7 +96,7 @@ html {
   padding: 0 4.8rem;
 }
 
-/****** Navegation bar ******** */
+/****** Aqui esta el Navegation bar ******** ********/
 .main-nav-list {
   list-style: none;
   display: flex;
@@ -133,7 +133,7 @@ html {
   background-color: #cf711f;
 }
 
-/* *********este es el Hero section *********/
+/* *********este es el Hero section *******************/
 .section-hero {
   background-color: #fae5d3;
   padding: 4.8rem 0 9.6rem 0;
@@ -167,7 +167,7 @@ html {
   line-height: 1.6;
   margin-bottom: 4.8rem;
 }
-/* ****** estos son los botones de la pagina principal ******/
+/* ****** Aqui trabajamos los botones de la pagina principal ******/
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -209,7 +209,7 @@ html {
 .margin-right-sm {
   margin-right: 1.6rem !important;
 }
-/* ******** componente de imagenes ****** */
+/* ******** componente de imagenes del hero section  ****** */
 
 .delivered-fod {
   display: flex;
@@ -243,4 +243,10 @@ html {
 .delivered-text spam {
   color: #cf711f;
   font-weight: 700;
+}
+
+/* *****aqui estamos tranjando los estilos de la seccion How it works  *******/
+
+.setp-image {
+  width: 50%;
 }
