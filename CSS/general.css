@@ -23,7 +23,10 @@ FONT SIZE SYSTEM (px)
 -----02 
 --colors 
 -primary : #e67e22
--tents #fae5d3 
+-tents 
+#fae5d3 
+
+#fdf2e9
 -shades
 -accents
 -greys #555  
@@ -67,7 +70,8 @@ html {
 
 .grid {
   display: grid;
-  gap: 9.6rem;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
 }
 
 .grid--2-col {
@@ -82,7 +86,9 @@ html {
 .grid--4-col {
   grid-template-columns: repeat(4, 1fr);
 }
-
+.grid--center-v {
+  align-items: center;
+}
 .subheading {
   display: inline-block;
   font-weight: 500;

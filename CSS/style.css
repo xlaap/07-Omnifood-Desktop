@@ -171,7 +171,7 @@
   margin-bottom: 1.2rem;
 }
 
-.setp-description {
+.step-description {
   font-size: 1.8rem;
   line-height: 1.8;
 }
@@ -180,7 +180,34 @@
   display: flex;
   align-content: center;
   justify-content: center;
+  position: relative;
 }
-.setp-image {
+.step-image {
+  width: 38%;
+}
+
+.step-box-imagen::before {
+  content: "";
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -2;
+}
+
+.step-box-imagen::after {
+  content: "";
   width: 50%;
+  padding-bottom: 50%;
+  background-color: #fae5d3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
 }
