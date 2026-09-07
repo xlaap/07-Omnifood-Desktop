@@ -254,3 +254,33 @@
   border-radius: 50%;
   z-index: -1;
 }
+
+/* ********************************************************** */
+/* *****aqui estamos tranjando los estilos de la seccion de meals  *******/
+/* ********************************************************** */
+
+.section-meals {
+  padding: 9.6rem 0;
+}
+
+.meal-img {
+  width: 100%;
+}
+
+.meal-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 3.2rem;
+}
+
+.attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.attribute {
+  font-size: 1.8rem;
+}
