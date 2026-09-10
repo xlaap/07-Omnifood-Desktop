@@ -130,9 +130,6 @@
   box-shadow: inset 0 0 0 3px #fff;
 }
 
-.margin-right-sm {
-  margin-right: 1.6rem !important;
-}
 /* ********************************************************** */
 /* ******** componente de imagenes del hero section  ****** */
 /* ********************************************************** */
@@ -331,4 +328,31 @@
   width: 2.4rem;
   height: 2.4rem;
   color: #e67e22;
+}
+
+/* aqui haremos la tercerna targenta */
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+
+.all-recipies {
+  text-align: center;
+  font-size: 1.8rem;
 }
