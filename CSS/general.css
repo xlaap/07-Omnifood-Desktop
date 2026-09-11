@@ -129,3 +129,24 @@ strong {
 .margin-bottom-md {
   margin-bottom: 4.8rem !important;
 }
+
+.text-center {
+  text-align: center;
+}
+
+/* links  */
+.link:link,
+.link:visited {
+  color: #e67e22;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
