@@ -369,6 +369,10 @@
 
 .section-testimonials {
   background-color: #fdf2e9;
+  display: grid;
+  /* use los fr con estos numeros como representacion de porcentajes para hacer mi grid izquierdo mas predominante que el derecho en terminos de espacio */
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
 }
 
 .testimonial-container {
@@ -378,7 +382,8 @@
 .testimonials {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4.8rem;
+  column-gap: 4.8rem;
+  row-gap: 8rem;
 }
 
 .testimonial-img {
@@ -395,14 +400,19 @@
 
 .testimonial-name {
   font-size: 1.6rem;
-  color: #777;
+  color: #6f6f6f;
 }
 
 /* aqui va la galleria */
 
+.gallery-item {
+  overflow: hidden;
+}
+
 .gallery-item img {
   display: block;
   width: 100%;
+  transition: all 0.4s;
 }
 
 .gallery {
@@ -410,4 +420,8 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
   padding: 1.6rem;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
 }
