@@ -559,7 +559,50 @@
       <section class="section-cta">
         <div class="container">
           <div class="cta">
-            <div class="cta-text-box">text</div>
+            <!-- aqui trabajare el texto que va al lado del formulario -->
+            <div class="cta-text-box">
+              <h2 class="heading-secundary">Get your frist meal for free!</h2>
+              <p class="cta-text">
+                Healthy, tasty and hassle-free meals are waiting for you. Start
+                eating well today. yo cancel o pause anytime. and the first meal
+                is on us.
+              </p>
+
+              <!-- aqui trajaremos el form -->
+              <form class="cta-form" action="#">
+                <div>
+                  <label for="full-name">Full name</label>
+                  <input
+                    id="full-name"
+                    placeholder="Luis Aguasvivas "
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email-address">Email address</label>
+                  <input
+                    id="email-address"
+                    type="email"
+                    placeholder="you@email.com"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="select-where">Where did you hear from us ?</label>
+                  <select name="" id="select-where" required>
+                    <option value="">Please choose one option</option>
+                    <option value="youtube">Youtube</option>
+                    <option value="Podcast">Podcast</option>
+                    <option value="Facebook">Facebook ads</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Others">Others</option>
+                  </select>
+                </div>
+
+                <button class="btn">Sign up now</button>
+              </form>
+            </div>
             <div
               class="cta-img-box"
               role="img"
