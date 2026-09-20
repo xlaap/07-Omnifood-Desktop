@@ -91,18 +91,33 @@
 /* ********************************************************** */
 /* ****** Aqui trabajamos los botones de la pagina principal ******/
 /* ********************************************************** */
-
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
   text-decoration: none;
   font-weight: 600;
-  color: white;
   font-size: 2rem;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
+  /* estos estilos solo aplican a btne */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
   /* siempre se pone la transcicion en el estado original */
   transition: all 500ms;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .btn-full:link,
@@ -528,8 +543,6 @@
   border-radius: 11px;
   background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
   overflow: hidden;
-  /* temprarry high */
-  height: 50rem;
 }
 
 .cta-text-box {
@@ -567,4 +580,30 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 3.2rem;
   row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fae5d3;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input ::placeholder {
+  color: #aaa;
+}
+
+.cta-form button {
 }
