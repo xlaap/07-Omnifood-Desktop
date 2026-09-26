@@ -7,7 +7,7 @@ Insted , 1rem = 1 em =16 pixels  */
 /* ***** Queries bolow 1344px (Smaller desktop *******/
 /* ********************************************************** */
 
-@media (max-with: 84em) {
+@media (max-width: 84em) {
   .hero {
     max-width: 120rem;
   }
@@ -25,13 +25,17 @@ Insted , 1rem = 1 em =16 pixels  */
 /* ***** Queries bolow 1200px (landscape tables) *******/
 /* ********************************************************** */
 
-@media (max-with: 75em) {
+@media (max-width: 75em) {
   html {
     font-size: 56.25%;
   }
 
   .header {
     padding: 0 3.2rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
   }
 
   .grid {
@@ -45,5 +49,39 @@ Insted , 1rem = 1 em =16 pixels  */
 
   .heading-terciary {
     font-size: 2.4rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .testimonial-container {
+    padding: 9.6rem 3.2rem;
+  }
+}
+
+/* ********************************************************** */
+/* ***** Queries bolow 944 pixels (tanblet vertical ) *******/
+/* ********************************************************** */
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+  .delivery-meals {
+    justify-content: center;
   }
 }
