@@ -53,6 +53,20 @@
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
 }
+
+/* mobile nav */
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.icon-mobile-nav {
+  height: 1.8rem;
+  width: 1.8rem;
+  color: #333;
+}
 /* ********************************************************** */
 /* *********este es el Hero section *******************/
 /* ********************************************************** */
