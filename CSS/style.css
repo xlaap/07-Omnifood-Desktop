@@ -65,9 +65,13 @@
 }
 
 .icon-mobile-nav {
-  height: 1.8rem;
-  width: 1.8rem;
+  height: 4.8rem;
+  width: 4.8rem;
   color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 /* ********************************************************** */
