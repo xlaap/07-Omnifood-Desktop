@@ -163,3 +163,19 @@ Insted , 1rem = 1 em =16 pixels  */
     font-size: 3.5rem;
   }
 }
+
+/* ********************************************************** */
+/* ***** Queries bolow 700 pixels (smaller tablets  ) *******/
+/* ********************************************************** */
+
+@media (max-width: 44em) {
+  .grid--4-col,
+  .grid--3-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diets {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+}
