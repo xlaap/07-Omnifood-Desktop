@@ -182,9 +182,13 @@ Insted , 1rem = 1 em =16 pixels  */
   /* hoy fue un dia en el cual no queria programar pero al menos escribti este comentario  */
 }
 
-/* ********************************************************** */
+/* **********************************************************
 /* ***** Queries bolow 450 pixels (celulares ) *******/
 /* ********************************************************** */
 
 @media (max-width: 16em) {
+  .hero {
+    background-color: red;
+    font-size: 22rem;
+  }
 }
