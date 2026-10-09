@@ -208,5 +208,8 @@ Insted , 1rem = 1 em =16 pixels  */
     grid-row: 1;
     grid-column: span 2;
     margin-bottom: 3.2rem;
+    width: auto;
   }
+
+  /*  hoy no quiero hacer nada pero almenos encendi la pc para agregar estas notas  */
 }
